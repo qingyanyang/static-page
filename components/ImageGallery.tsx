@@ -53,28 +53,26 @@ export default function ImageGallery({ galleryImgs }: ImageGalleryProps) {
 
   return (
     <>
-      <section className="py-20 w-auto px-4 bg-[#a1a1a1]/20">
-        <div className="container grid grid-cols-2 md:grid-cols-5 gap-2">
-          {galleryImgs.map((imgSrc, i) => (
-            <div
-              key={i}
-              className="aspect-square bg-gray-200 cursor-pointer relative group overflow-hidden"
-              onClick={() => openModal(i)}
-            >
-              <Image
-                src={imgSrc || "/placeholder.svg"}
-                alt={`Project ${i + 1}`}
-                width={200}
-                height={200}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <ZoomIn className="text-white" size={24} />
-              </div>
+      <div className="container grid grid-cols-2 md:grid-cols-5 gap-2">
+        {galleryImgs.map((imgSrc, i) => (
+          <div
+            key={i}
+            className="aspect-square bg-gray-200 cursor-pointer relative group overflow-hidden"
+            onClick={() => openModal(i)}
+          >
+            <Image
+              src={imgSrc || "/placeholder.svg"}
+              alt={`Project ${i + 1}`}
+              width={200}
+              height={200}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <ZoomIn className="text-white" size={24} />
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
 
       {/* Fullscreen Modal */}
       {isModalOpen && (
