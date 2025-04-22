@@ -36,7 +36,7 @@ export default function Services() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url(https://lirp.cdn-website.com/c3913815/dms3rep/multi/opt/20190605164640-2880w.jpg)",
+              "url( https://lirp.cdn-website.com/c3913815/dms3rep/multi/opt/829954062333316286-2880w.jpg)",
             backgroundAttachment: "fixed",
           }}
         ></div>
@@ -75,7 +75,7 @@ export default function Services() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url(https://lirp.cdn-website.com/c3913815/dms3rep/multi/opt/829954062333316286-2880w.jpg)",
+              "url(https://lirp.cdn-website.com/c3913815/dms3rep/multi/opt/20190605164640-2880w.jpg)",
             backgroundAttachment: "fixed",
           }}
         ></div>
